@@ -1,0 +1,205 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-weight: 400;
+  /* font-family: 'Dancing Script', cursive; */
+  font-family: "Roboto", sans-serif;
+}
+
+@media only screen and (max-width: 650px) {
+  html {
+    font-size: 0.5rem;
+  }
+}
+
+body {
+  background: -webkit-gradient(
+      linear,
+      left top, left bottom,
+      color-stop(0, rgba(17, 45, 56, 0.7)),
+      to(rgba(17, 45, 56, 0.7))
+    ),
+    url("../img/michael-fenton-0ZQ8vojHNuc-unsplash.jpg") center no-repeat;
+  background: linear-gradient(
+      to bottom,
+      rgba(17, 45, 56, 0.7) 0,
+      rgba(17, 45, 56, 0.7) 100%
+    ),
+    url("../img/michael-fenton-0ZQ8vojHNuc-unsplash.jpg") center no-repeat;
+  background-color: #142d37;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.container {
+  max-width: 70rem;
+  margin: 10rem auto;
+  text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+.heading-1 {
+  font-size: 4rem;
+  color: rgba(109, 152, 233, 0.9);
+  text-transform: capitalize;
+  margin-bottom: 6rem;
+  letter-spacing: 2px;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+.form-names {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.form-names .form-group {
+  margin: 0 3rem;
+  margin-bottom: 4rem;
+}
+
+.form-names .form-group input {
+  font-size: 2rem;
+  background: none;
+  border: 0;
+  border-bottom: 2px solid #7ab1ff;
+  outline: 0;
+  color: #7ab1ff;
+  padding: 0.8rem 0rem;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+  transition: "color 9999s ease-out, background-color 9999s ease-out";
+  -webkit-transition-delay: 9999s;
+  transition-delay: 9999s;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: #7ab1ff !important;
+}
+
+.form-names .form-group input::-webkit-input-placeholder {
+  color: #7ab1ff;
+  text-transform: capitalize;
+}
+
+.form-names .form-group input:-ms-input-placeholder {
+  color: #7ab1ff;
+  text-transform: capitalize;
+}
+
+.form-names .form-group input::placeholder {
+  color: #7ab1ff;
+  text-transform: capitalize;
+}
+
+.form .btn {
+  background-color: rgba(122, 177, 255, 0.85);
+  color: #ffffff;
+  font-size: 2rem;
+  padding: 1rem 4.25rem;
+  border: 0;
+  border-radius: 5rem;
+  outline: 0;
+  cursor: pointer;
+  margin-bottom: 4rem;
+}
+
+.happy-valentine h2 {
+  font-size: 5rem;
+  font-family: "Dancing Script", cursive;
+  color: #e96dbc;
+  -webkit-animation: opacity 5s ease-in-out infinite;
+  animation: opacity 5s ease-in-out infinite;
+  padding-bottom: 4rem;
+}
+
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.their-names {
+  font-size: 2.5rem;
+  font-weight: 300;
+  text-transform: capitalize;
+  color: #e96dbc;
+  margin-bottom: 2rem;
+  -webkit-animation: opacity 5s ease-in-out 1;
+  animation: opacity 5s ease-in-out 1;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+footer {
+  color: #e96dbc;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
